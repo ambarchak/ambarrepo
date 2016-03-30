@@ -9,6 +9,6 @@ namespace AjaxForm
     {
 
         public bool chkval { get; set; }
-        public string str { get; }
+        public string str { get; }//eeererere
     }
 }
