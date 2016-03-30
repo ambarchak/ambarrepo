@@ -1,0 +1,29 @@
+﻿@model AjaxForm.AjaxClass 
+
+@{
+    ViewBag.Title = "AjaxFrom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+    @using (Ajax.BeginForm("AjaxFrom", "AjaxFrom", new AjaxOptions { UpdateTargetId = "Productresult" }))
+    {
+         <div id="Productresult"></div>
+         @Html.ValidationSummary(true)
+       
+        @Html.CheckBoxFor(m =>Model.chkval);
+        
+        <p>
+         <button>Add Product</button>    
+        </p>
+    }
+
+@* @using (Html.BeginForm("AjaxFrom", "AjaxFrom", FormMethod.Post, null))
+    {
+        @Html.CheckBoxFor(m =>Model.chkval);
+        
+        <p>
+        <input type="submit" value="Ajax Form Action" />
+        </p>
+    }*@
