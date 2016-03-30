@@ -92,6 +92,6 @@ namespace AjaxForm.Models
     {
         public string Provider { get; set; }//wwewe
         public string ProviderDisplayName { get; set; }
-        public string ProviderUserId { get; set; }
+        public string ProviderUserId { get; set; }//dfdfdfdf
     }
 }
