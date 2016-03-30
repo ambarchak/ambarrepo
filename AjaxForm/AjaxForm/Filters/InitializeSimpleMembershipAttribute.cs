@@ -12,7 +12,7 @@ namespace AjaxForm.Filters
     public sealed class InitializeSimpleMembershipAttribute : ActionFilterAttribute
     {
         private static SimpleMembershipInitializer _initializer;
-        private static object _initializerLock = new object();
+        private static object _initializerLock = new object();//trtrtrt
         private static bool _isInitialized;
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
